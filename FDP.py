@@ -1,5 +1,5 @@
 """
-Modelling Field Development Model
+Modelling Field Development
 
 Objectives: 
 * Model Waterflood Recovery and Recovery after EOR based on given Swi, Sor,
@@ -26,7 +26,11 @@ Depreciation is still to be included.
 """ #### Recovery Analysis Functions - Waterflood & EOR """
 
 def Rec_Analysis():
-  """Collects values of Water Saturation (Swi) """
+  """Collects values of Water Saturation (Swi), Residual Oil Saturation (Sor),
+     Oil Viscosity (muo), and Water Viscosity (muw). 
+     Calculates So, Kro, Krw, M, and fw.
+     Returns a Dataframe with R, Sw, So, Sw*, Kro, Krw, M, fw"""
+  
   Swi = float(input("Enter Initial Water Saturation, Swi: "))
   Soi = 1-Swi
   print('Initial Oil Saturation, Soi:',Soi)
