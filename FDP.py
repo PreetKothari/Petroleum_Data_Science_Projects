@@ -19,9 +19,9 @@ Objectives:
 
 Note: 
 Depreciation is still to be included.
-
-### **Functions**
 """
+
+"""### **Functions** """
 
 """ #### Recovery Analysis Functions - Waterflood & EOR """
 
