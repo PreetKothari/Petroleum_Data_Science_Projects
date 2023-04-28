@@ -41,17 +41,45 @@ After solving the diffusivity equation based on above conditions:
 
 ### Modelling in Python
 
-The shown parameters and dataset was taken for modelling well behavior. 
+The shown parameters and [WTA.xlsx](https://github.com/PreetKothari/Petroleum_Data_Science_Projects/blob/main/Well%20Testing%20Simulator/WTA.xlsx) dataset was taken for modelling well behavior. 
 
 ![image](https://user-images.githubusercontent.com/87279526/235211045-1901442c-d213-42df-8175-55797f6d846d.png)
 
+### Well Test Plots
+
+The following plots were plotted:
+
+![image](https://user-images.githubusercontent.com/87279526/235212561-0252dac5-233d-494b-98d5-d7c4d328ed13.png)
+![image](https://user-images.githubusercontent.com/87279526/235212581-7992bb35-2971-429e-b5db-8f9e721c3682.png)
+![image](https://user-images.githubusercontent.com/87279526/235212595-60814be3-0054-473b-a656-380f3922d600.png)
+![image](https://user-images.githubusercontent.com/87279526/235212612-6ffb76b4-67c3-4911-9b53-59ab2d0cb7ae.png)
+![image](https://user-images.githubusercontent.com/87279526/235212631-137c1d26-3a80-4d95-a99e-94ed4da86795.png)
+![image](https://user-images.githubusercontent.com/87279526/235212653-46706038-b091-465c-aa4f-6a9b89664f3c.png)
 
 
+Using the Semi-Log and Log-Log plots the Fully Wellbore Storage (FWBS) and the Infinite Acting Radial Flow (IARF) periods were estimated.
 
-Despite many efforts (theoretical and experimental) throughout the years, modelling the ROP as a mathematical function of some key variables is not so trivial, due to the highly non-linearity behaviour experienced. Therefore, several researches in the recent years have been proposing to use data-driven models from artificial intelligence field for ROP prediction and optimization.
+![image](https://user-images.githubusercontent.com/87279526/235213272-1fc3f511-aaf3-4774-b2e4-3b61480827e9.png)
 
-Our aim is to encourage participants from both domain and non-domain to come together and find innovative solutions to address the challenge.
+![image](https://user-images.githubusercontent.com/87279526/235213209-85a4b5d7-7efe-40b7-a0cf-dabdf6ae4843.png)
 
-### Datasets Description
-The dataset is derived from Equinor’s public Volve dataset under Equinor Open Data Licence. The dataset contains seven wells with twelve common drilling attributes with nearly
-200,000 samples.
+FWBS period exists around t = 0.001 to t = 0.04 hours.
+
+![image](https://user-images.githubusercontent.com/87279526/235213301-784a9761-5f7b-461c-b482-e8b87b2852ee.png)
+
+![image](https://user-images.githubusercontent.com/87279526/235213324-8e0f16ab-4f27-440a-8d20-a6d984cc8e6c.png)
+
+IARF period exists around t = 10 to t = 65 hours.
+
+Now, after ascertaining the FWBS and IARF periods, for further analysis and calculation of well and reservoir parameters like Wellbore Storage and Skin, Permeability, etc. two approaches were used, namely:
+
+1. Conventional Method –
+
+From the log-log plot it was estimated that the FWBS period exists around t = 0 to t = 0.04 hours.
+
+![image](https://user-images.githubusercontent.com/87279526/235213644-40029395-cb3b-4468-89d6-f02d421a7791.png)
+
+The different values of Pwf were plotted against time for the fully wellbore storage period on a Cartesian plot to calculate the slope of the graph and find the wellbore storage constant. 
+
+![image](https://user-images.githubusercontent.com/87279526/235213917-e12177e3-9273-4843-a084-cbcdd2d956a1.png)
+
