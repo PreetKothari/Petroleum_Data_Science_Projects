@@ -71,15 +71,23 @@ FWBS period exists around t = 0.001 to t = 0.04 hours.
 
 IARF period exists around t = 10 to t = 65 hours.
 
-Now, after ascertaining the FWBS and IARF periods, for further analysis and calculation of well and reservoir parameters like Wellbore Storage and Skin, Permeability, etc. two approaches were used, namely:
+Now, after ascertaining the FWBS and IARF periods, for further analysis and calculation of well and reservoir parameters like Wellbore Storage and Skin, Permeability, etc. two approaches can be used, namely:
 
-1. Conventional Method –
+1. Conventional Method
+2. Derivative Method
 
-From the log-log plot it was estimated that the FWBS period exists around t = 0 to t = 0.04 hours.
+### Conclusion
 
-![image](https://user-images.githubusercontent.com/87279526/235213644-40029395-cb3b-4468-89d6-f02d421a7791.png)
+The well test analysis was modelled using Python to interpret Cartesian, Semi-Log and Log-Log plots to calculate the values of following well and reservoir parameters:
 
-The different values of Pwf were plotted against time for the fully wellbore storage period on a Cartesian plot to calculate the slope of the graph and find the wellbore storage constant. 
+1. Wellbore Storage Constant
+2. Permeability
+3. Skin
 
-![image](https://user-images.githubusercontent.com/87279526/235213917-e12177e3-9273-4843-a084-cbcdd2d956a1.png)
+Conventional and Derivative methods were modelled and the values of various parameters found out from the both the methods were:
+
+* Conventional Method:  Cs = 0.00534 bbl/psi , K = 3.52 mD, and S = 3.5
+* Derivative Method: Cs = 0.00529 bbl/psi, k = 3.30 mD, and S = 3.1
+
+It was observed that there was very little difference in values calculated from the above mentioned methods, thus this simulator can be used to get a rough estimate of the various well and reservoir parameters with certain accuracy.
 
